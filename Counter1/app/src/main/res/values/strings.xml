@@ -3,4 +3,6 @@
     <string name="initial_value">0</string>
     <string name="increment">增加</string>
     <string name="reset">歸零</string>
+    <string name="minus">減少</string>
+
 </resources>

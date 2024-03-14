@@ -22,6 +22,19 @@ public class MainActivity extends AppCompatActivity {
         value.setText(Integer.toString(counter));//轉字串
     }
 
+    public void button3_Click(View view){
+        TextView value = (TextView) findViewById(R.id.textView); //先把ID找出來
+        int counter = Integer.parseInt(value.getText().toString());//轉整數
+        if (counter > 0) {
+            counter--;
+            value.setText(Integer.toString(counter));//轉字串
+        } else
+        {
+
+        }
+    }
+
+
     public void button2_Click(View view) {
         TextView value = (TextView) findViewById(R.id.textView);
         value.setText(R.string.initial_value);
