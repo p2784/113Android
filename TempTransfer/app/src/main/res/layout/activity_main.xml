@@ -8,12 +8,12 @@
     tools:context=".MainActivity">
 
     <EditText
-        android:id="@+id/edtName"
+        android:id="@+id/edtTemp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="248dp"
+        android:layout_marginTop="84dp"
         android:ems="10"
-        android:inputType="text"
+        android:inputType="numberDecimal"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.92"
         app:layout_constraintStart_toStartOf="parent"
@@ -23,14 +23,14 @@
         android:id="@+id/btnSend"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="36dp"
+        android:layout_marginTop="8dp"
         android:hint="@string/send"
         android:onClick="button_Click"
+        android:text="@string/send"
         android:textSize="34sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.469"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/edtName" />
+        app:layout_constraintTop_toBottomOf="@+id/edtTemp" />
 
     <TextView
         android:id="@+id/textView"
@@ -38,10 +38,11 @@
         android:layout_height="wrap_content"
         android:layout_marginEnd="20dp"
         android:hint="@string/input_name"
+        android:text="@string/input_name"
         android:textAllCaps="false"
         android:textSize="34sp"
         app:layout_constraintBottom_toTopOf="@+id/btnSend"
-        app:layout_constraintEnd_toStartOf="@+id/edtName"
+        app:layout_constraintEnd_toStartOf="@+id/edtTemp"
         app:layout_constraintHorizontal_bias="0.636"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
@@ -51,11 +52,12 @@
         android:id="@+id/txvShow"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="44dp"
+        android:layout_marginTop="48dp"
         android:hint="@string/txvShow"
+        android:text="@string/txvShow"
         android:textSize="34sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintHorizontal_bias="0.069"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btnSend" />
 </androidx.constraintlayout.widget.ConstraintLayout>
