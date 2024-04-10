@@ -22,7 +22,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         Button btnClear = (Button) findViewById(R.id.btnClear);
         btnCalc.setOnClickListener(this);
         btnClear.setOnClickListener(this);
-
     }
 
     @Override
@@ -30,20 +29,38 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         EditText edtHeight = (EditText) findViewById(R.id.edtHeight);
         EditText edtWeight = (EditText) findViewById(R.id.edtWeight);
 
-        if(v.getId()==R.id.btnCalc){
-            double height = Double.parseDouble(edtHeight.getText().toString());
-            double weight = Double.parseDouble(edtWeight.getText().toString());
-            double bmi = weight / Math.pow(height/100.0, 2);
-            if(bmi >= 24)
+        if (v.getId() == R.id.btnCalc) {
+            String heightStr = edtHeight.getText().toString();
+            String weightStr = edtWeight.getText().toString();
+
+            if (heightStr.isEmpty() || weightStr.isEmpty()) {
+                txvShow.setText("請於身高、體重填入數字，勿留白");
+                return;
+            }
+
+            double height, weight;
+
+
+            height = Double.parseDouble(heightStr);
+            weight = Double.parseDouble(weightStr);
+
+
+            if (height <= 0 || weight <= 0) {
+                txvShow.setText("身高體重必須大於0");
+                return;
+            }
+
+            double bmi = weight / Math.pow(height / 100.0, 2);
+
+            if (bmi >= 24)
                 txvShow.setTextColor(Color.RED);
             else if (bmi < 18.5)
                 txvShow.setTextColor(Color.BLUE);
             else
                 txvShow.setTextColor(Color.GREEN);
 
-            txvShow.setText(String.format("%.2f",bmi));
-        }
-        else{
+            txvShow.setText(String.format("%.2f", bmi));
+        } else {
             edtHeight.setText("0");
             edtWeight.setText("0");
             txvShow.setText("");
