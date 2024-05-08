@@ -1,0 +1,26 @@
+R_DEF: Internal format may change without notice
+local
+color black
+color white
+drawable ic_launcher_background
+drawable ic_launcher_foreground
+id btnCalc
+id btnClear
+id edtHeight
+id edtWeight
+id linear
+id textView2
+id textView3
+id txvShow
+layout activity_main
+mipmap ic_launcher
+mipmap ic_launcher_round
+string app_name
+string bmi
+string clear
+string height
+string weight
+style Base.Theme.BMI
+style Theme.BMI
+xml backup_rules
+xml data_extraction_rules
