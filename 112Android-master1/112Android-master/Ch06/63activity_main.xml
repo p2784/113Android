@@ -44,43 +44,14 @@
             android:text="兔子" />
     </RadioGroup>
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_marginTop="64dp"
-        android:orientation="vertical"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:layout_editor_absoluteX="0dp">
-
-        <ImageView
-            android:id="@+id/imageOutput1"
-            android:layout_width="207dp"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="16dp"
-            android:layout_marginTop="20dp"
-            android:visibility="gone"
-            app:srcCompat="@mipmap/dog" />
-
-        <ImageView
-            android:id="@+id/imageOutput2"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:visibility="gone"
-            app:srcCompat="@mipmap/elephant" />
-
-        <ImageView
-            android:id="@+id/imageOutput3"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:visibility="gone"
-            app:srcCompat="@mipmap/mouse" />
-
-        <ImageView
-            android:id="@+id/imageOutput4"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:visibility="gone"
-            app:srcCompat="@mipmap/rabbit" />
-    </LinearLayout>
+    <ImageView
+        android:id="@+id/imgOutput"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rgImages"
+        app:srcCompat="@mipmap/dog" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
