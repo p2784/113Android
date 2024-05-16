@@ -24,7 +24,9 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                 TextView output = (TextView) findViewById(R.id.lblOutput);
-                output.setText("You selected: " + cities[position]);
+                output.setText("你是住在: " + cities[position]);
+                Toast.makeText(MainActivity.this, "你是住在: " + cities[position],
+                        Toast.LENGTH_SHORT).show();// 顯示訊息
             }
         });
     }
