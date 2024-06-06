@@ -25,12 +25,12 @@ public class MainActivity extends AppCompatActivity {
                 EditText txtOpd1, txtOpd2;
                 txtOpd1 = findViewById(R.id.txtOpd1);
                 txtOpd2 = findViewById(R.id.txtOpd2);
-                Intent intent = new Intent(MainActivity.this, OpActivity.class);
+                Intent intent = new Intent(MainActivity.this, com.example.ch9_5.OpActivity.class);
                 Bundle bundle = new Bundle();
                 bundle.putString("OPERAND01", txtOpd1.getText().toString());
                 bundle.putString("OPERAND02", txtOpd2.getText().toString());
                 intent.putExtras(bundle);
-                startActivityForResult(intent, 1);//劃一條線代表有新的做法
+                startActivityForResult(intent, 1);//劃一條線代表有新的做法。
             }
     });
     }
