@@ -9,8 +9,8 @@ from linebot.models import MessageEvent, TextMessage, PostbackEvent, TextSendMes
 , CarouselTemplate , CarouselColumn, ImageCarouselTemplate, ImageCarouselColumn
 from urllib.parse import parse_qsl
 
-line_bot_api = LineBotApi('yQgWUmyqRasW+nblgt5ZS3FO65qpFse1qT4Igj2Pz0bGyr3RwwbHyrdUGGAM0zjZYrASaUalY4tZW7w/4Ap7xjJQY6VFZGfwxsxXZdFWEBsVFoFQoKR7IXHeSYlgcpCF1z9uFD1bS3wJxh1Tb1OSIgdB04t89/1O/w1cDnyilFU=')
-handler = WebhookHandler('ccbd9ee3f644c4f6cdd5c8c6668b803d')
+line_bot_api = LineBotApi('yQgWt5ZS3FO65qpFse1qT4Igj2Pz0bGyr3RwwbHyrdUGGAM0zjZYrASaUalY4tZW7w/4Ap7xjJQY6VFZGfwxsxXZdFWEBsVFoFQoKR7IXHeSYlgcpCF1z9uFD1bS3wJxh1Tb1OSIgdB04t89/1O/w1cDnyilFU=')
+handler = WebhookHandler('')
 
 @app.route('/callback', methods=['POST'])
 def callback():
